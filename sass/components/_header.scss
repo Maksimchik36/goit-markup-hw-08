@@ -4,6 +4,7 @@
   & .container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     background-color: red;
   }
 
@@ -24,11 +25,11 @@
   display: none;
 }
 
-.menu-button .is-open .icon-cross {
+.menu-button.is-open .icon-cross {
   display: block;
 }
 
-.menu-button .is-open .icon-menu {
+.menu-button.is-open .icon-menu {
   display: none;
 }
 
