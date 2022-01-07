@@ -269,6 +269,15 @@ address {
   color: var(--accent-color);
 }
 
+@media screen and (min-width: 768px) {
+  .contacts__link {
+    display: flex;
+    align-items: baseline;
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .contacts__link.telephone {
     font-size: 34px;
@@ -284,14 +293,6 @@ address {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .contacts__link {
-    display: flex;
-    font-size: 12px;
-    line-height: 1.16;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .contacts__icon {
     display: none;
@@ -301,6 +302,7 @@ address {
 @media screen and (min-width: 768px) {
   .contacts__icon {
     margin-right: 8px;
+    fill: currentColor;
   }
 }
 
