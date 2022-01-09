@@ -540,6 +540,10 @@ address {
   border-radius: 4px;
 }
 
+.feature.section {
+  padding-bottom: 0;
+}
+
 .feature__title {
   margin: 0;
   padding: 0;
@@ -603,6 +607,12 @@ address {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-color);
+}
+
+@media screen and (max-width: 1199px) {
+  .specialization {
+    display: none;
+  }
 }
 
 .specialization__title {
