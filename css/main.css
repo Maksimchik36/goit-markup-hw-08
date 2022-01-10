@@ -213,6 +213,8 @@ address {
 }
 
 .mobile-menu {
+  height: 100%;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
