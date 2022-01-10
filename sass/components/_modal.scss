@@ -1,5 +1,6 @@
 .backdrop {
   position: fixed;
+  overflow-y: scroll;
   top: 0;
   left: 0;
   width: 100vw;
@@ -18,8 +19,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  max-width: 450px;
+  min-height: 609px;
   padding: 40px;
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
@@ -28,6 +29,16 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    height: 609px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 button.close {
@@ -54,10 +65,12 @@ button.close {
 
 .modal-text {
   margin: 0;
-  margin-bottom: 10px;
+  // margin-bottom: 10px;
+  margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  // line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
@@ -140,11 +153,13 @@ textarea::placeholder {
 
 .check-field .check-label {
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.17;
+  // line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-color);
 }
