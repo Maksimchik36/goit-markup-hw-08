@@ -18,7 +18,7 @@
   &__navigation {
     // margin-left: 93px;
     @media screen and (max-width: 767px) {
-      margin-bottom: 306px;
+      // margin-bottom: 306px;
     }
     @media screen and (min-width: 768px) {
       margin-right: 84px;
@@ -98,11 +98,16 @@
 .mobile-menu {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
     align-items: center;
   }
+}
+
+.mob-bottom {
+  margin-top: auto;
 }
 
 .navigation__list {
