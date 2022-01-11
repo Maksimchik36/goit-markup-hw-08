@@ -1062,8 +1062,6 @@ footer .networks__link {
 
 .portfolio button {
   padding: 6px 22px;
-  margin-left: 8px;
-  margin-top: 15px;
   border-radius: 4px;
   border-color: transparent;
   font-family: inherit;
@@ -1076,6 +1074,11 @@ footer .networks__link {
   background-color: var(--background-color);
   cursor: pointer;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio .buttons {
+  margin-left: 8px;
+  margin-top: 15px;
 }
 
 .portfolio .title {
